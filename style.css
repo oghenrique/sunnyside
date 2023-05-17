@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-font: 'Barlow', sans-serif;
+    --title-font:'Fraunces', serif;
+}
+
+body{
+    font-family: var(--text-font);
+}
+
+header{
+    height: 80vh;
+    background-image: url(./images/mobile/image-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
