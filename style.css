@@ -14,10 +14,12 @@
     --graphic-text: #25564b;
     --photography-text: #19536b;
     --footer-bg: #458c7e;
+    --description-bg: #FFFBF8;
 }
 
 body{
     font-family: var(--text-font);
+    background-color: var(--description-bg);
 }
 
 header{
@@ -55,4 +57,55 @@ header h1{
 
 header .arrow-down{
     place-self: start center;
+}
+
+.values img{
+    width: 100%;
+}
+
+.description{
+    display: grid;
+    padding-block: 64px;
+    place-items: center;
+    height: 500px;
+}
+
+.description__title{
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    width: 300px;
+}
+
+.description__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray);
+    width: 375px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.description__learn-more{
+    position: relative;
+    font-family: var(--text-font);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.line{
+    position: absolute;
+    height: 8px;
+    width: 110%;
+    border-radius: 4px;
+    left: -5%;
+    bottom: 1%;
+    z-index: -1;
+    opacity: .5;
+}
+
+.line-yellow{
+    background-color: var(--yellow);
 }
