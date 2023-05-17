@@ -7,6 +7,13 @@
 :root{
     --text-font: 'Barlow', sans-serif;
     --title-font:'Fraunces', serif;
+    --red: #fe7867;
+    --yellow: #fad400;
+    --gray: #a7abae;
+    --white: #ffffff;
+    --graphic-text: #25564b;
+    --photography-text: #19536b;
+    --footer-bg: #458c7e;
 }
 
 body{
@@ -18,4 +25,34 @@ header{
     background-image: url(./images/mobile/image-header.jpg);
     background-position: bottom;
     background-size: cover;
+    color: var(--white);
+    padding: 32px 16px;
+    display: grid;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+header h1{
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    place-self: start center;
+    text-align: center;
+    letter-spacing: .5rem;
+}
+
+header .arrow-down{
+    place-self: start center;
 }
